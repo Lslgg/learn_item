@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class BusinessPage extends StatefulWidget {
-  const BusinessPage({super.key});
+class ContactsPage extends StatefulWidget {
+  const ContactsPage({super.key});
 
   @override
-  State<BusinessPage> createState() => _BusinessPageState();
+  State<ContactsPage> createState() => _ContactsPageState();
 }
 
-class _BusinessPageState extends State<BusinessPage> {
+class _ContactsPageState extends State<ContactsPage> {
   @override
   Widget build(BuildContext context) {
     // center

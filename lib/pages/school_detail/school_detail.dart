@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
-import 'package:learn_item/pages/main_nav.dart';
 
 class SchoolDetail extends StatefulWidget {
   const SchoolDetail({super.key});
@@ -15,21 +13,22 @@ class _SchoolDetailState extends State<SchoolDetail> {
   Widget build(BuildContext context) {
     // center
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('SchoolDetail'),
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            const Text('SchoolDetail'),
-            ElevatedButton(
-              child: const Text('Go to HomePage'),
-              onPressed: () {
-                Get.to(const MainNav());
-              },
-            ),
-          ],
-        ));
+      appBar: AppBar(
+        title: const Text('SchoolDetail'),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          const Text('SchoolDetail'),
+          ElevatedButton(
+            child: const Text('Go to HomePage'),
+            onPressed: () {
+              Get.toNamed('/');
+            },
+          ),
+        ],
+      ),
+    );
   }
 }

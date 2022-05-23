@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learn_item/pages/school_detail/school_detail.dart';
 
-class SchoolPage extends StatefulWidget {
-  const SchoolPage({super.key});
+import '../router/app_pages.dart';
+
+class MyPage extends StatefulWidget {
+  const MyPage({super.key});
 
   @override
-  State<SchoolPage> createState() => _SchoolPageState();
+  State<MyPage> createState() => _MyPageState();
 }
 
-class _SchoolPageState extends State<SchoolPage> {
+class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
-    // center
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -21,7 +21,7 @@ class _SchoolPageState extends State<SchoolPage> {
         ElevatedButton(
           child: const Text('Go to SchoolDetail'),
           onPressed: () {
-            Get.to(const SchoolDetail());
+            Get.toNamed(Routes.schoolDetail);
           },
         ),
       ],
